@@ -1,7 +1,8 @@
 # intelligent_door_monitor
 ## 基于STM32F4系列的MQTT智能门禁锁
 
-通过STM32F407ZET6的裸机开发(本想遵从于FreeROTS设计，但是甚至觉得有点麻烦)
+### 通过STM32F407ZET6的裸机开发(本想遵从于FreeROTS设计，但是甚至觉得有点麻烦)
+- 由于我的开发板是只有三个串口，导致串口不够用，故蓝牙/WIFI解锁/MQTT_WIFI,提供了三个版本
 
 ```C
 
