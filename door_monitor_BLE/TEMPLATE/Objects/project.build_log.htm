@@ -1,0 +1,151 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a sunyi, a, LIC=0VRJ7-EDRBB-UMQ9A-10WYR-C8LHJ-R9F6V
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\sunyi\Desktop\STM32项目(最终)\智能门禁(裸机蓝牙)\TEMPLATE\project.uvprojx
+Project File Date:  08/19/2021
+
+<h2>Output:</h2>
+Build target 'TEMPLATE'
+compiling includes.c...
+Objects\includes.c(803): warning:  #223-D: function "paj7620u2_selectBank" declared implicitly
+        paj7620u2_selectBank(BANK0);//进入BANK0寄存器区域
+Objects\includes.c: 1 warning, 0 errors
+compiling MFRC522.c...
+linking...
+Program Size: Code=29418 RO-data=3290 RW-data=18144 ZI-data=2840  
+FromELF: creating hex file...
+".\Objects\project.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.1.0.8.pack
+                Keil::Device:StdPeriph Drivers:Framework:1.3.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Framework Version: 1.3.1
+   * Component: DCMI Version: 1.3.0
+   * Component: Startup Version: 1.3.1
+   * Component: EXTI Version: 1.3.0
+   * Component: ADC Version: 1.3.0
+   * Component: Flash Version: 1.3.0
+   * Component: GPIO Version: 1.3.0
+   * Component: IWDG Version: 1.3.0
+   * Component: RTC Version: 1.3.0
+   * Component: TIM Version: 1.3.0
+   * Component: PWR Version: 1.3.0
+   * Component: SPI Version: 1.3.0
+   * Component: SYSCFG Version: 1.3.0
+   * Component: USART Version: 1.3.0
+   * Component: WWDG Version: 1.3.0
+   * Component: RCC Version: 1.3.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\sunyi\Desktop\STM32项目(最终)\智能门禁(裸机蓝牙)\TEMPLATE\RTE
+  C:\Users\sunyi\Desktop\STM32项目(最终)\智能门禁(裸机蓝牙)\TEMPLATE\RTE\Device\STM32F407ZE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:1.3.1
+      Include file:  Device\StdPeriph_Driver\templates\stm32f4xx_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f4xx_it.c
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f4xx_conf.h
+
+   * Component: Keil::Device:StdPeriph Drivers:DCMI:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_dcmi.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_dcmi.c
+
+   * Component: Keil::Device:Startup:1.3.1
+      Source file:   Device\Source\ARM\startup_stm32f40_41xxx.s
+      Source file:   Device\Source\system_stm32f4xx.c
+      Source file:   Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Device\Include\stm32f4xx.h
+      Source file:   Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_exti.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_exti.c
+
+   * Component: Keil::Device:StdPeriph Drivers:ADC:1.3.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_adc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_adc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Flash:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_flash.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_flash.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:IWDG:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_iwdg.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_iwdg.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RTC:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_rtc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_rtc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_tim.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_tim.c
+
+   * Component: Keil::Device:StdPeriph Drivers:PWR:1.3.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_pwr.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_pwr.h
+
+   * Component: Keil::Device:StdPeriph Drivers:SPI:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_spi.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_spi.c
+
+   * Component: Keil::Device:StdPeriph Drivers:SYSCFG:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_syscfg.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_syscfg.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_usart.c
+
+   * Component: Keil::Device:StdPeriph Drivers:WWDG:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_wwdg.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_wwdg.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_rcc.c
+</pre>
+</body>
+</html>
